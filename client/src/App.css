@@ -1,0 +1,303 @@
+.App {
+  text-align: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(6, 7, 24) 100%);
+  height: 100vh;
+  /* position: relative; */
+
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+@import url('https://fonts.googleapis.com/css2?family=Saira:wght@200&family=Work+Sans:ital,wght@1,200&display=swap');@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.playerDeckText {
+  font-size: 2rem;
+  /* margin: 0 20px; */
+}
+
+.Game {
+  background-size: cover;
+  margin: 0;
+  height: 100vh;
+}
+/* Player Decks */
+.player1Deck {
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+} 
+
+.Card {
+  display: flex;
+  align-items: center;
+  color: white;
+  width: 200px;
+  height: 300px;
+  margin: 3px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* font-family: 'Saira', sans-serif; */
+
+
+  font-size: 20px;
+  /* background-color: purple; */
+}
+.Deck{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  flex-direction: row;
+  /* position: absolute;
+            bottom: 0;
+            left: 0; */
+  /* align-content: end; */
+}
+.choice{
+  color: white;
+  width: 100%;
+  height: 100%;
+  margin: 90px 0 0 0;
+}
+.ChoosenCard {
+
+  width: 13vw;
+  height: 34vh;
+  display: flex;
+  align-items: center;
+  /* font-family: 'Work Sans', sans-serif; */
+
+  border-radius: 15px;
+    font-size: 20px;
+  color: white;
+
+  background-color: rgba(37, 193, 37);
+
+}
+.Start-Status{
+  position: relative;
+  right: 700px;
+  padding: 5px;  
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  /* background-color: rgba(37, 193, 37); */
+}
+.middleInfo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: -5vh 0 -5vh 0;
+ 
+}
+.MemeCard{
+  justify-content: center;
+  height: 30vw;
+  transform: rotate(-90deg);
+  border-radius: 15px;
+  
+}
+.JudgeCard{
+
+  width: 12vw;
+  height: 34vh;
+  align-items: center;
+  justify-content: center;
+  /* font-size: 30px; */
+      font-size: 25px;
+
+  display: flex;
+  color: white;
+
+
+
+  border-radius: 15px;
+    background-color: green;
+}
+.Seconds{
+  display: flex;
+  height: 100%;
+  width: 500px;
+  color: white
+  /* background-color: rgba(37, 193, 37); */
+}
+.Status{
+  padding: 5px;  
+  color: white;
+  font-size: 20px;
+  border-radius: 15px;
+  /* background-color: rgba(37, 193, 37); */
+}
+.Status{
+  align-items: center;
+  display: flex;
+  z-index: 10;
+}
+
+.UpSide{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  /* justify-content: space-between; */
+  /* margin-top: -60px; */
+  font-size: 50px;
+
+}
+.WhoYou{
+  display: flex;
+  height: 100%;
+  width: 100%;
+  font-size: 30px;
+  color: white;
+  justify-content: center;
+}
+.Homepage{
+  /* background-color:rgb(236, 205, 205); */
+
+  /* background-image: url("./assets/Images/Back.png"); */
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.homepage-menu{
+  /* background-color:rgb(236, 205, 205); */
+
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  height: 600px;
+  width: 500px;
+  /* background: black; */
+  
+}
+.Start-name{
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px;
+}
+.homepage-name{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* color: rgb(219, 89, 89); */
+  align-items: center;
+}
+.homepage-join{
+  display: flex;
+  justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.TextGreen{
+  color: #02AAA4
+}
+.TextPurple{
+  color: #00368E;
+}
+.TextPink{
+  color: #CC2DAE;
+}
+.homepage-form{
+  background-color: white;
+  padding: 50px;
+  border-radius: 30px;
+}
+.winnerStyle{
+  color: white;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+  .JudgeCard {
+    width: 40vw;
+  }
+  .ChoosenCard{
+    width: 40vw;
+  }
+  .Deck{
+    flex-wrap: wrap
+  }
+  .Card{
+    width:150px;
+    height:250px
+  }
+}
+
+/* // Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+
+}
+
+/* // Large devices (desktops, 992px and up) */
+@media (max-width: 992px) {
+  .middleInfo{
+    position: relative;
+    top: 30px;
+    flex-direction: column;
+  }
+  .Card{
+    font-size: 15px;
+
+  }
+  .MemeCard{
+    height: 60vw;
+  }
+  .JudgeCard{
+    font-size: 16px;
+  }
+  .ChoosenCard{
+    font-size: 17px;
+  }
+ }
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+  /* .MemeCard{
+    height: 450px;
+  }
+  .JudgeCard{
+    width: 30vw;
+    height: 300px;
+  } */
+ }
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+    .JudgeCard{
+      font-size: 18px;
+    }
+    .ChoosenCard{
+      font-size: 19px;
+    }
+ }
